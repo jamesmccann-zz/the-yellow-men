@@ -1,0 +1,12 @@
+{
+  "name": "yellow-men",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "keystone": "^0.3.16"
+  }
+}
