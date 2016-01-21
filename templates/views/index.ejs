@@ -9,5 +9,12 @@
     <% include ../shared/header %>
   </header>
 
+  <div class="works">
+    <% works.forEach(function(work) { %>
+      <!-- Rendered once per local work -->
+      <% include ./home/work %>
+    <% }) %>
+  </div>
+
 </body>
 </html>
