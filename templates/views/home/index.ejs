@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <% include ../shared/head %>
+  <% include ../../shared/head %>
 </head>
 <body>
 
   <header>
-    <% include ../shared/header %>
+    <% include ../../shared/header %>
   </header>
+
+  <div class="intro">
+    <%= intro.content %>
+  </div>
 
   <div class="works">
     <% works.forEach(function(work) { %>
-      <!-- Rendered once per local work -->
-      <% include ./home/work %>
+      <% include ./work %>
     <% }) %>
   </div>
 

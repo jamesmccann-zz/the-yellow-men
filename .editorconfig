@@ -1,0 +1,5 @@
+root = true
+
+[*.{html,erb,ejs}]
+intent_style = space
+indent_size = 4

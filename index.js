@@ -12,7 +12,10 @@ keystone.init({
   'session': false,
   'auth': false,
   'user model': undefined,
-  'cookie secret': '(your secret here)'
+  'cookie secret': '(your secret here)',
+
+  'cloudinary config': 'cloudinary://775724521783313:CPGROhGYZwwHJ0RaUc9RCJWX2qA@the-yellow-men',
+  'cloudinary folders': true,
 });
 
 require('./models');

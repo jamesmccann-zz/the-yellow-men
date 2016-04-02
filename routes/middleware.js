@@ -19,3 +19,12 @@ exports.initErrorHandlers = function(req, res, next) {
   next();
 };
 
+exports.initLocals = function(req, res, next) {
+  var locals = res.locals;
+
+  locals.$ = require('jquery');
+  locals.moment = require('moment');
+
+  next()
+};
+

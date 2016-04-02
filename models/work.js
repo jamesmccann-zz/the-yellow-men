@@ -12,7 +12,7 @@ Work.add({
   date: { type: Types.Date, index: true },
   images: { type: Types.CloudinaryImages },
   state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
-  description: Types.Text,
+  description: { type: Types.Textarea },
   createdAt: { type: Date, default: Date.now }
 })
 
