@@ -1,0 +1,7 @@
+S3_BUCKET="yellowmen.com"
+S3_KEY=""
+S3_SECRET=""
+S3_REGION="ap-southeast-2"
+CLOUDINARY_URL="cloudinary://key:secret@the-yellow-men"
+MONGO_URI="mongodb://localhost/yellow-men"
+SECRET=""
