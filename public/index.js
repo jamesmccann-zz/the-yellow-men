@@ -7,7 +7,7 @@ $(document).ready(function() {
     speed: 500,
     cssEase: 'linear',
     adaptiveHeight: false,
-    arrows: false
+    arrows: false,
   })
 
   $('.work-carousel-nav').slick({
