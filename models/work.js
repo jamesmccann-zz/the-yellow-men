@@ -11,7 +11,7 @@ Work.add({
   title: { type: String, required: true, initial: true },
   date: { type: Types.Date, index: true },
   images: { type: Types.CloudinaryImages },
-  video: { type: Types.S3File },
+  videos: { type: Types.Relationship, ref: 'Video', many: true },
   state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
   description: { type: Types.Textarea },
   createdAt: { type: Date, default: Date.now }

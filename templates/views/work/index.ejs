@@ -10,8 +10,11 @@
   </header>
 
     <div class="work">
-
         <div class="work-carousel">
+            <% work.videos.forEach(function(video) { %>
+                <video src="<%= video.video.url %>" controls></video>
+            <% }) %>
+
             <% work.images.forEach(function(image) { %>
                 <div>
                     <a href="<%= image.secure_url %>" target="_blank">
@@ -22,6 +25,9 @@
         </div>
 
         <div class="work-carousel-nav">
+            <% work.videos.forEach(function(video) { %>
+                <div class="work-carousel-nav-thumb" style="background-image: url('<%= video.thumbnail.secure_url %>');"></div>
+            <% }) %>
             <% work.images.forEach(function(image) { %>
                 <div class="work-carousel-nav-thumb" style="background-image: url('<%= image.secure_url %>');"></div>
             <% }) %>

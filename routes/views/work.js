@@ -12,7 +12,10 @@ module.exports = function(req, res) {
     Work.model.findOne()
       .where('key', params.key)
       .where('state', 'published')
+      .populate('videos')
       .exec(function(err, work) {
+        console.log(work)
+
         locals.work = work
         next(err)
       });

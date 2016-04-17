@@ -11,7 +11,6 @@ module.exports = function(req, res) {
     ContentBlock.model.findOne()
       .where('name', 'home-intro')
       .exec(function(err, cb) {
-        console.log(cb)
         locals.intro = cb
         next(err)
     });
