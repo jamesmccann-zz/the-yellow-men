@@ -12,7 +12,11 @@
     <div class="work">
         <div class="work-carousel">
             <% work.videos.forEach(function(video) { %>
-                <video src="<%= video.video.url %>" controls></video>
+                <div>
+                    <div class="work-carousel-video">
+                        <video src="<%= video.video.url %>" controls></video>
+                    </div>
+                </div>
             <% }) %>
 
             <% work.images.forEach(function(image) { %>
