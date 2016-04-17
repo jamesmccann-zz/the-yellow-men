@@ -1,3 +1,4 @@
+require('dotenv').config();
 var keystone = require('keystone');
 
 keystone.init({
@@ -7,14 +8,13 @@ keystone.init({
   'view engine': 'ejs',
 
   'auto update': false,
-  'mongo': 'mongodb://localhost/yellow-men',
+  'mongo': process.env.MONGO_URI,
 
   'session': false,
   'auth': false,
   'user model': undefined,
-  'cookie secret': '(your secret here)',
+  'cookie secret': process.env.SECRET,
 
-  'cloudinary config': 'cloudinary://775724521783313:CPGROhGYZwwHJ0RaUc9RCJWX2qA@the-yellow-men',
   'cloudinary folders': true,
 });
 
