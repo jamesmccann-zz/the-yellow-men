@@ -1,5 +1,6 @@
 require('dotenv').config();
 var keystone = require('keystone');
+var basicAuth = require('./basic-auth');
 
 keystone.init({
   'name': 'Yellow Men',
@@ -11,7 +12,7 @@ keystone.init({
   'mongo': process.env.MONGO_URI,
 
   'session': false,
-  'auth': false,
+  'auth': basicAuth(process.env.ADMIN_USER, process.env.ADMIN_PASS),
   'user model': undefined,
   'cookie secret': process.env.SECRET,
 
