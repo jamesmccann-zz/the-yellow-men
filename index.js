@@ -7,7 +7,7 @@ keystone.init({
   'views': 'templates/views',
   'view engine': 'ejs',
 
-  'auto update': true,
+  'auto update': false,
   'mongo': process.env.MONGO_URI,
 
   'session': false,
