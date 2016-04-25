@@ -10,7 +10,9 @@
   </header>
 
   <div class="intro">
-    <%= intro.content %>
+    <% if (intro) { %>
+      <%= intro.content %>
+    <% } %>
   </div>
 
   <div class="works">
