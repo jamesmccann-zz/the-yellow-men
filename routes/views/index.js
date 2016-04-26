@@ -17,10 +17,9 @@ module.exports = function(req, res) {
   });
 
   view.on('init', function(next) {
-
     Work.model.find()
       .where('state', 'published')
-      .limit(12)
+      .sort('-date')
       .exec(function(err, works) {
         locals.works = [].concat(works)
         next(err)
